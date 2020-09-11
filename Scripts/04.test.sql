@@ -88,6 +88,11 @@ SELECT * FROM TRI_TEST ;
 INSERT INTO tri_test(txt) values('test2');
 
 
+--------------------------------------------
+SELECT CODE, NAME, PRICE, PICTUREURL, DESCRIPTION FROM PRODUCT WHERE CODE = ?;
+
+
+SELECT CODE, NAME, PRICE, PICTUREURL, DESCRIPTION FROM PRODUCT;
 
 
 
