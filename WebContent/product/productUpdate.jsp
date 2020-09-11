@@ -8,47 +8,10 @@
 <meta charset="UTF-8">
 <title>상품 수정</title>
 <link rel="stylesheet" type="text/css" href="css/shopping.css">
-<style type="text/css">
-	img {
-		border-radius: 8px;
-		padding: 5px;
-		width: 200px;
-		height: 3o0px;
-	}
-	table td{
-		text-align: left;
-	}
-</style>
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script type="text/javascript">
-	$(function(){
-	    $("#modify").on("click", function(){
-			event.preventDefault();
-			var res = productCheck();
-			alert(res);
-			$("form").submit();
-	    });
-	});
-	
-	function productCheck() {
-		if ($('#name').val().length == 0) {
-			alert("상품명을 써주세요.");
-			$('#name').focus();
-			return false;
-		}
-		if ($('#price').val().length == 0) {
-			alert("가격을 써주세요");
-			$('#price').focus();
-			return false;
-		}
-		if (isNaN($('#price').val())) {
-			alert("숫자를 입력해야 합니다");
-			$('#price').focus();
-			return false;
-		}
-		return true;
-	}
-	</script>
+<link rel="stylesheet" type="text/css" href="css/productupdate.css">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/shopping.js"></script>
+<script type="text/javascript" src="js/productupdate.js"></script>
 </head>
 <body>
 	<div id="wrap" align="center">

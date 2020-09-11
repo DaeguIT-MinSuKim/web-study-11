@@ -8,17 +8,7 @@
 <meta charset="UTF-8">
 <title>상품 삭제</title>
 <link rel="stylesheet" type="text/css" href="css/shopping.css">
-<style type="text/css">
-	img {
-		border-radius: 8px;
-		padding: 5px;
-		width: 200px;
-		height: 3o0px;
-	}
-	table td{
-		text-align: left;
-	}
-</style>
+<link rel="stylesheet" type="text/css" href="css/productdelete.css">
 </head>
 <body>
 	<div id="wrap" align="center">

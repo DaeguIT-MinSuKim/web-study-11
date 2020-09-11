@@ -6,41 +6,10 @@
 	<meta charset="UTF-8">
 	<title>상품 등록</title>
 	<link rel="stylesheet" type="text/css" href="css/shopping.css">
-	<style type="text/css">
-	table td{
-		text-align: left;
-	}
-	</style>
+	<link rel="stylesheet" type="text/css" href="css/productwrite.css">
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script type="text/javascript">
-	$(function(){
-	    $("#reg").on("click", function(){
-			event.preventDefault();
-			var res = productCheck();
-			alert(res);
-			$("form").submit();
-	    });
-	});
-	
-	function productCheck() {
-		if ($('#name').val().length == 0) {
-			alert("상품명을 써주세요.");
-			$('#name').focus();
-			return false;
-		}
-		if ($('#price').val().length == 0) {
-			alert("가격을 써주세요");
-			$('#price').focus();
-			return false;
-		}
-		if (isNaN($('#price').val())) {
-			alert("숫자를 입력해야 합니다");
-			$('#price').focus();
-			return false;
-		}
-		return true;
-	}
-	</script>
+	<script type="text/javascript" src="js/shopping.js"></script>
+	<script type="text/javascript" src="js/productwrite.js"></script>
 </head>
 <body>
 	<div id="wrap" align="center">
