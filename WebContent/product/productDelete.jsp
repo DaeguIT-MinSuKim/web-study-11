@@ -15,6 +15,9 @@
 		width: 200px;
 		height: 3o0px;
 	}
+	table td{
+		text-align: left;
+	}
 </style>
 </head>
 <body>
@@ -23,7 +26,8 @@
 		<form action="productDelete.do" method="post">
 			<table>
 				<tr>
-					<td><c:choose>
+					<td>
+						<c:choose>
 							<c:when test="${empty product.pictureUrl}">
 								<img src="upload/noimage.gif">
 							</c:when>
@@ -43,8 +47,11 @@
 							</tr>
 							<tr>
 								<th>설 명</th>
-								<td><div style="height: 220px; width: 100%">
-										${product.description}</div></td>
+								<td>
+									<div style="height: 220px; width: 100%">
+										${product.description}
+									</div>
+								</td>
 							</tr>
 						</table>
 					</td>

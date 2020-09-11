@@ -15,6 +15,9 @@
 		width: 200px;
 		height: 3o0px;
 	}
+	table td{
+		text-align: left;
+	}
 </style>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script type="text/javascript">
