@@ -16,4 +16,20 @@ public class ProductService {
     public List<Product> productLists(){
         return dao.selectProductByAll();
     }
+    
+    public int addProduct(Product pdt) {
+        return dao.insertProduct(pdt);
+    }
+    
+    public Product getProduct(int code) {
+        return dao.selectProductBycode(code);
+    }
+    
+    public int modifyProduct(Product pdt) {
+        return dao.updateProduct(pdt);
+    }
+    
+    public int removeProduct(int code) {
+        return dao.deleteProduct(code);
+    }
 }
